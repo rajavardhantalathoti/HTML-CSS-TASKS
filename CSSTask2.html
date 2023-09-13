@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSTask2</title>
+    <style>
+        .gri{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .vertical{
+            border: 2px solid black;
+            width: 40%;
+        }
+        ol#vertical{
+            list-style-type: none;
+            background-color: rgb(139, 215, 243);
+            color: blue;
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            margin: 5px;
+        }
+        ol#vertical li a{
+            text-decoration: none;
+            padding: 10px;
+            display: flex;
+        }
+        ol#vertical li a.active{
+            background-color: orange;
+            color: white;
+        }
+        ol#vertical li a:hover{
+            background-color: darkgray;
+            color: aliceblue;
+        }
+        .horizantal{
+            border: 2px solid black;
+            height: fit-content;
+            width: 60%;
+        }
+        ol#horizantal{
+            list-style-type: none;
+            background-color: rgb(204, 201, 201);
+            color: blue;
+            margin: 5px 0px 5px 5px;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+        }
+        ol#horizantal li a{
+            border-right: 1px solid blue;
+            padding: 10px 10px;
+            text-decoration: none;
+            display: block;
+        }
+        ol#horizantal li a.active{
+            background-color: dimgray;
+            color: aliceblue;
+        }
+        ol#horizantal li a:hover{
+            background-color: orange;
+            color: aliceblue;
+        }
+        .two{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task 2</h2>
+    <div class="gri">
+        <div>
+            <h3>Vertical Navigatio Bar</h3>
+        <div class="vertical">
+            <ol id="vertical">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ol>
+        </div>
+        </div>
+        <div class="two">
+        <h3>Horizontal Navigation Bar</h3>
+        <div class="horizantal">
+            <ol id="horizantal">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+            </ol>
+        </div>
+        </div>  
+    </div> 
+</body>
+</html>

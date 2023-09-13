@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            margin-top: 10%;
+        }
+        #profile{
+            margin-left: 22%;
+            width: 50%;
+        }
+        .end{
+            background-color: whitesmoke;
+            padding: 4%;
+        }
+        #cnl{
+            color: white;
+            background-color: red;
+            border: white;
+            border-style: hidden;
+            padding: 2%;
+            width: 20%;
+            border-radius: 10%;
+        }
+        #fp{
+            margin-left: 47%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmkp9a2rrD1Sskb9HLt5mDaTt4QaIs8CcBg&usqp=CAU" alt="Profile Photo" id="profile"><br>
+        <form action=" " method="post">
+            <label for="username"><b>Username</b></label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" style="width: 100%;" required><br><br>            
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" style="width: 100%;" required><br><br>
+            <button type="submit" style="width: 100%; background-color: rgb(23, 207, 41); color: white; border: white; padding: 1%;" id="lgn">Login</button><br><br>
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label><br>
+            <div class="end">
+                <button type="button" id="cnl">Cancel</button>
+                <a href="#" id="fp">Forgot Password?</a>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>

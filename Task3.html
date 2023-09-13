@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+        a + a::before {
+            content: " | ";
+        }
+    </style>
+</head>
+<body>
+    <p>Click any of the following links<p>
+    <a href="Task1.html" target="_blank">Opens in New</a>
+    <a href="Task2.html" target="_self">Opens in self</a>
+    <a href="Task2.html" target="_parent">Opens in parent</a>
+    <a href="Task1.html" target="_top">Opens in body</a>
+    <a href="email.html">Send Email</a>
+</body>
+</html>
